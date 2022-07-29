@@ -1,0 +1,12 @@
+name: 'Link Augmenter'
+type: module
+description: 'Provides a plugin to inject links into date displays.'
+core_version_requirement: ^8 || ^9 || ^10
+package: 'Date Augmenter'
+dependencies:
+  - 'date_augmenter:date_augmenter'
+
+# Information added by Drupal.org packaging script on 2022-07-29
+version: '1.0.0'
+project: 'link_augment'
+datestamp: 1659096022

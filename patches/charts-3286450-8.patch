@@ -1,0 +1,86 @@
+diff --git a/modules/charts_api_example/charts_api_example.info.yml b/modules/charts_api_example/charts_api_example.info.yml
+index cdbeb8c..4637ecf 100755
+--- a/modules/charts_api_example/charts_api_example.info.yml
++++ b/modules/charts_api_example/charts_api_example.info.yml
+@@ -1,7 +1,7 @@
+ name: 'Charts API Example'
+ type: module
+ description: 'Demonstrates how to use the Charts module without Views.'
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ package: Examples
+ dependencies:
+   - 'charts:charts'
+diff --git a/modules/charts_billboard/charts_billboard.info.yml b/modules/charts_billboard/charts_billboard.info.yml
+index 5a3eb80..dd7d537 100755
+--- a/modules/charts_billboard/charts_billboard.info.yml
++++ b/modules/charts_billboard/charts_billboard.info.yml
+@@ -2,6 +2,6 @@ name: 'Billboard.js Charts'
+ type: module
+ description: 'Charts module integration with Billboard.js Charts.'
+ package: Charts
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ dependencies:
+   - 'charts:charts'
+diff --git a/modules/charts_blocks/charts_blocks.info.yml b/modules/charts_blocks/charts_blocks.info.yml
+index 1bed03f..7386c50 100755
+--- a/modules/charts_blocks/charts_blocks.info.yml
++++ b/modules/charts_blocks/charts_blocks.info.yml
+@@ -1,7 +1,7 @@
+ name: Charts Blocks
+ type: module
+ description: Create Charts blocks without the need for Views.
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ package: Charts
+ dependencies:
+   - charts
+diff --git a/modules/charts_c3/charts_c3.info.yml b/modules/charts_c3/charts_c3.info.yml
+index 543116a..5190165 100755
+--- a/modules/charts_c3/charts_c3.info.yml
++++ b/modules/charts_c3/charts_c3.info.yml
+@@ -2,6 +2,6 @@ name: 'C3.js Charts'
+ type: module
+ description: 'Charts module integration with C3.js Charts.'
+ package: Charts
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ dependencies:
+   - 'charts:charts'
+diff --git a/modules/charts_chartjs/charts_chartjs.info.yml b/modules/charts_chartjs/charts_chartjs.info.yml
+index bb3031d..ca08511 100755
+--- a/modules/charts_chartjs/charts_chartjs.info.yml
++++ b/modules/charts_chartjs/charts_chartjs.info.yml
+@@ -2,6 +2,6 @@ name: 'Chart.js Charts'
+ type: module
+ description: 'Charts module integration with Chart.js.'
+ package: Charts
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ dependencies:
+   - 'charts:charts'
+diff --git a/modules/charts_google/charts_google.info.yml b/modules/charts_google/charts_google.info.yml
+index e455c54..d9c9d90 100755
+--- a/modules/charts_google/charts_google.info.yml
++++ b/modules/charts_google/charts_google.info.yml
+@@ -2,6 +2,6 @@ name: 'Google Charts'
+ type: module
+ description: 'Charts module integration with Google Charts.'
+ package: Charts
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ dependencies:
+   - 'charts:charts'
+diff --git a/modules/charts_highcharts/charts_highcharts.info.yml b/modules/charts_highcharts/charts_highcharts.info.yml
+index e71a445..04d8faa 100755
+--- a/modules/charts_highcharts/charts_highcharts.info.yml
++++ b/modules/charts_highcharts/charts_highcharts.info.yml
+@@ -2,7 +2,7 @@ name: Highcharts
+ type: module
+ description: 'Charts module integration with Highcharts library.'
+ package: Charts
+-core_version_requirement: ^9.2
++core_version_requirement: ^9.2 || ^10
+ dependencies:
+   - charts:charts

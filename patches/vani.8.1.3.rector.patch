@@ -1,0 +1,25 @@
+diff --git a/theme-settings.php b/theme-settings.php
+index eda807d..f7ab8a8 100644
+--- a/theme-settings.php
++++ b/theme-settings.php
+@@ -5,7 +5,7 @@
+  */
+
+ function vani_form_system_theme_settings_alter(&$form, &$form_state) {
+-  $image_vanipro = $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'vani') . '/images/vanipro.png';
++  $image_vanipro = $GLOBALS['base_url'] . '/' . \Drupal::service('extension.list.theme')->getPath('vani') . '/images/vanipro.png';
+   $vanipro = '<img src="'.$image_vanipro.'" alt="vanipro" />';
+   $form['vani'] = [
+     '#type'       => 'vertical_tabs',
+diff --git a/vani.theme b/vani.theme
+index e3a0a45..6929495 100644
+--- a/vani.theme
++++ b/vani.theme
+@@ -60,7 +60,7 @@ function vani_preprocess_page(array &$variables) {
+ 	};
+ 	if(!empty($slider_image_file)) {
+     $imageuri = $slider_image_file->getFileUri();
+-    $variables['slider_image_path'] = file_create_url($imageuri);
++    $variables['slider_image_path'] = \Drupal::service('file_url_generator')->generateAbsoluteString($imageuri);
+ 	};
+ }

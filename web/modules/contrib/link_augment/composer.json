@@ -1,0 +1,15 @@
+{
+    "name": "drupal/link_augment",
+    "type": "drupal-module",
+    "description": "Link Augmenter for Dates",
+    "homepage": "https://www.drupal.org/project/link_augment",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/link_augment",
+        "source": "https://git.drupalcode.org/project/link_augment"
+    },
+    "require": {
+      "drupal/date_augmenter": "^1.0"
+    }
+}
